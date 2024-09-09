@@ -1,0 +1,124 @@
+.containerr {
+  display: flex;
+  flex-direction: column; /* Make the header and boxes stack vertically */
+  box-sizing: border-box;
+  height: 98.5vh;
+  width: 97vw;
+}
+
+.boxesh {
+  display: flex;
+  flex: 1;
+  margin-top: 60px; /* Adjust this based on the actual height of your header */
+}
+
+.boxx {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.lefth {
+  background-color: white;
+  flex-basis: 22vw;
+}
+
+.todo-process-container {
+  width: 100%;
+  display: flex;
+  margin-bottom: 40px; /* Space between the process bar and the button grid */
+}
+
+.process-bar {
+  width: 100%;
+  display: flex;
+  flex-direction: column; /* Stack circles vertically */
+  gap: 30px; /* Add spacing between the circles */
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  border-radius: 50%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.circle::before {
+  content: '';
+  position: absolute;
+  top: 25px; /* Adjust position of the line */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 100%;
+  background-color: #d3d3d3;
+  z-index: -1;
+}
+
+.circle:first-child::before {
+  display: none;
+}
+
+.label {
+  position: relative;
+  margin-left: 30px;
+  font-size: 14px;
+  color: black;
+  width: 130px;
+}
+
+.process-bar .circle-container {
+  display: flex;
+  align-items: center;
+}
+
+.process-bar .circle:first-child::before {
+  display: none;
+}
+
+
+
+/* Specific styles for the body when on the Todo page */
+.righth {
+  background-color: white;
+  flex-basis: 80vw;
+}
+
+body.todo-page-body {
+  background: black;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.todo-button-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px; /* Add space between the buttons */
+}
+
+.todo-button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 6px;
+  width: 100%; /* Let the button take full width of the grid cell */
+}
+
+.todo-button:hover {
+  background-color: #434242;
+}
+

@@ -1,0 +1,50 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 184vh;
+  background-color: white;
+}
+  
+.login-icon {
+  width: 150px; /* Adjust the size as needed */
+  height: auto; /* Maintains aspect ratio */
+  margin-bottom: 10px; /* Adds space between the image and the heading */
+}
+  
+  .login-container h1 {
+    color: black;
+  }
+  
+  .login-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+  
+  .login-container input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .login-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px
+  }
+
+  .login-container button:hover {
+  background-color: #434242;
+  }
+  
+  .error {
+    color: red;
+  }
+  
